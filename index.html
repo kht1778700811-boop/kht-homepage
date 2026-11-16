@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>(주)금호테크닉스 | 햇빛소득마을 재생에너지 종합서비스기업(ReSCO)</title>
+<meta name="description" content="행정안전부 2026 햇빛소득마을 조성사업 재생에너지 종합서비스기업(ReSCO) (주)금호테크닉스. 설계·시공·인허가·운영까지 마을 태양광 전 과정을 지원합니다.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#141a16; --ink2:#4a524c; --muted:#7a817b;
+  --green:#1f6b3f; --green2:#2f8a55; --green-soft:#e3f0e7;
+  --gold:#d9a514; --gold2:#b8860b; --gold-soft:#fdf3d8;
+  --night:#0b1f14; --night2:#12301f;
+  --bg:#f1efea; --card:#faf9f6; --line:#e4e1da; --tile:#f1efe9;
+  --fs:1;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:calc(16px * var(--fs))}
+body{font-family:"Noto Sans KR","Noto Sans CJK KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif;color:var(--ink);background:var(--bg);line-height:1.65;word-break:keep-all;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+
+/* NAV */
+.nav{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .3s, box-shadow .3s}
+.nav.solid{background:rgba(11,31,20,.94);backdrop-filter:blur(10px);box-shadow:0 1px 0 rgba(255,255,255,.06)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:72px}
+.brand{display:flex;flex-direction:column;gap:2px}
+.brand small{font-size:.66rem;color:rgba(255,255,255,.75);letter-spacing:.02em}
+.brand img{height:34px}
+.menu{display:flex;gap:30px;font-size:.88rem;color:rgba(255,255,255,.85)}
+.menu a:hover{color:var(--gold)}
+.nav-cta{display:flex;gap:10px}
+.btn{display:inline-flex;align-items:center;gap:8px;border-radius:999px;font-weight:700;font-size:.88rem;padding:10px 20px;border:1px solid transparent;cursor:pointer;font-family:inherit;transition:transform .15s, background .2s}
+.btn:hover{transform:translateY(-1px)}
+.btn-gold{background:var(--gold);color:#1a1405}
+.btn-ghost{border-color:rgba(255,255,255,.35);color:#fff;background:rgba(255,255,255,.04)}
+.btn-green{background:var(--green);color:#fff}
+.btn-outline{border-color:var(--line);background:#fff;color:var(--ink)}
+.btn svg{width:16px;height:16px}
+
+/* HERO */
+.hero{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:center;color:#fff;overflow:hidden;background:var(--night)}
+.hero-bg{position:absolute;inset:0;z-index:0}
+.hero-bg svg{width:100%;height:100%;display:block}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,18,11,.55) 0%,rgba(6,18,11,.25) 40%,rgba(6,18,11,.7) 100%);z-index:1}
+.hero .wrap{position:relative;z-index:2;text-align:center;padding-top:110px;padding-bottom:90px}
+.pill{display:inline-flex;align-items:center;gap:8px;font-size:.8rem;padding:7px 16px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18)}
+.pill i{width:7px;height:7px;border-radius:50%;background:var(--gold)}
+.hero h1{font-size:clamp(2.6rem,7vw,4.6rem);font-weight:900;line-height:1.18;letter-spacing:-.03em;margin:26px 0 22px}
+.hero h1 .g{background:linear-gradient(90deg,#e8b21a 0%,#e8b21a 45%,#7fbf7a 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero .sub{font-size:clamp(1.1rem,2.4vw,1.5rem);color:rgba(255,255,255,.88);font-weight:500}
+.hero .sub b{display:block;color:var(--gold);font-weight:800;margin-top:2px}
+.badges{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:24px 0 30px}
+.badge{display:inline-flex;align-items:center;gap:7px;font-size:.78rem;padding:7px 14px;border-radius:999px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.18)}
+.badge::before{content:"";width:13px;height:13px;border-radius:50%;background:var(--gold) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M4 8.5l2.5 2.5L12 5.5' fill='none' stroke='%231a1405' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/10px no-repeat}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);max-width:640px;margin:0 auto;border:1px solid rgba(255,255,255,.18);border-radius:16px;background:rgba(255,255,255,.07);backdrop-filter:blur(6px)}
+.stats div{padding:20px 10px}
+.stats b{display:block;font-size:clamp(1.5rem,3.4vw,2rem);font-weight:800}
+.stats span{display:block;font-size:.8rem;color:rgba(255,255,255,.8)}
+.stats em{display:block;font-style:normal;font-size:.7rem;color:var(--gold);margin-top:2px}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:30px}
+.hero-cta .btn{padding:14px 26px;font-size:.95rem}
+.scroll{position:absolute;bottom:22px;left:50%;transform:translateX(-50%);z-index:2;font-size:.66rem;letter-spacing:.2em;color:rgba(255,255,255,.6);text-align:center}
+
+/* MARQUEE */
+.marquee{background:var(--night);color:rgba(255,255,255,.8);overflow:hidden;border-top:1px solid rgba(255,255,255,.06)}
+.marquee .track{display:flex;gap:56px;padding:16px 0;width:max-content;animation:mq 40s linear infinite;font-size:.86rem}
+.marquee span{display:inline-flex;align-items:center;gap:9px;white-space:nowrap}
+.marquee span::before{content:"";width:11px;height:11px;border-radius:50%;background:var(--gold)}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* SECTIONS */
+section.sec{padding:110px 0}
+.eyebrow{font-size:.78rem;font-weight:800;letter-spacing:.2em;color:var(--gold2);text-transform:uppercase}
+.sec h2{font-size:clamp(1.9rem,4vw,2.7rem);font-weight:900;line-height:1.28;letter-spacing:-.03em;margin:14px 0 16px}
+.sec h2 em{font-style:normal;color:var(--green)}
+.lead{font-size:1.04rem;color:var(--ink2);max-width:680px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.alt{background:var(--card)}
+
+.kpis{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--tile);margin-top:30px}
+.kpis div{padding:22px 20px;border-right:1px solid var(--line)}
+.kpis div:last-child{border-right:0}
+.kpis b{font-size:2.2rem;font-weight:900;color:var(--green);letter-spacing:-.02em}
+.kpis b small{font-size:.95rem;margin-left:2px}
+.kpis strong{display:block;font-size:.9rem;margin-top:2px}
+.kpis span{font-size:.78rem;color:var(--muted)}
+.dowell{border:1.5px solid #9fd0b0;border-radius:14px;padding:26px 28px;background:#fff}
+.dowell h4{color:var(--green);font-size:.9rem;letter-spacing:.12em;margin-bottom:14px}
+.dowell li{list-style:none;display:flex;gap:12px;align-items:center;font-weight:700;font-size:1.05rem;padding:8px 0}
+.chk{flex:none;width:22px;height:22px;border-radius:50%;background:var(--green);display:grid;place-items:center}
+.chk svg{width:12px;height:12px}
+
+.news{display:flex;gap:16px;align-items:center;border:1.5px solid #f0c75a;background:var(--gold-soft);border-radius:14px;padding:20px 24px;margin:28px 0 14px}
+.news .ic{width:44px;height:44px;border-radius:50%;background:var(--gold2);display:grid;place-items:center;flex:none}
+.news small{display:block;color:var(--gold2);font-weight:800;font-size:.74rem;letter-spacing:.14em}
+.news b{font-size:1.25rem;font-weight:900}
+.cards{display:grid;gap:12px}
+.cards.c2{grid-template-columns:1fr 1fr}
+.card{display:flex;gap:16px;background:var(--tile);border:1px solid var(--line);border-radius:14px;padding:20px 22px}
+.card .ic{width:42px;height:42px;border-radius:10px;background:var(--green-soft);display:grid;place-items:center;flex:none;color:var(--green)}
+.card .ic.solid{background:var(--green2);color:#fff}
+.card .ic svg{width:21px;height:21px}
+.card h3{font-size:1.06rem;font-weight:800;margin-bottom:4px}
+.card p{font-size:.92rem;color:var(--ink2)}
+
+.req{display:flex;gap:16px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px 24px}
+.req .no{flex:none;width:38px;height:38px;border-radius:50%;background:var(--gold);display:grid;place-items:center;font-weight:900;font-size:.9rem}
+.req h3{font-size:1.08rem;font-weight:800;margin-bottom:4px}
+.req p{font-size:.92rem;color:var(--ink2)}
+
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:40px}
+.step{background:var(--tile);border:1px solid var(--line);border-radius:16px;padding:26px 24px;position:relative}
+.step .no{width:40px;height:40px;border-radius:50%;background:var(--green);color:#fff;display:grid;place-items:center;font-weight:900;font-size:.92rem;margin-bottom:16px}
+.step h3{font-size:1.12rem;font-weight:800;margin-bottom:6px}
+.step p{font-size:.9rem;color:var(--ink2)}
+.step.hl{background:var(--gold-soft);border-color:#f0c75a}
+.step.hl .no{background:var(--gold2)}
+
+.site-box{background:var(--green-soft);border:1px solid #b9dcc4;border-radius:16px;padding:28px 30px}
+.site-box h3{display:flex;align-items:center;gap:10px;font-size:1.2rem;font-weight:800;margin-bottom:8px}
+.site-box ul{margin-top:12px}
+.site-box li{list-style:none;display:flex;gap:10px;align-items:center;font-size:.94rem;padding:4px 0}
+.site-box li::before{content:"✓";color:var(--green);font-weight:900}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:20px}
+.gallery figure{border-radius:12px;overflow:hidden;background:#fff;border:1px solid var(--line)}
+.gallery img{aspect-ratio:16/9;object-fit:cover;width:100%;transition:transform .5s}
+.gallery figure:hover img{transform:scale(1.04)}
+.gallery figcaption{padding:12px 14px;font-weight:700;font-size:.92rem}
+
+/* CONTACT */
+.contact{background:var(--night);color:#fff;position:relative;overflow:hidden}
+.contact::before{content:"";position:absolute;width:640px;height:640px;border-radius:50%;right:-200px;top:-260px;background:radial-gradient(circle,rgba(217,165,20,.28),transparent 65%)}
+.contact .eyebrow{color:var(--gold)}
+.contact h2 em{color:var(--gold)}
+.contact .lead{color:rgba(255,255,255,.78)}
+.clist{display:grid;gap:12px}
+.citem{display:flex;align-items:center;gap:16px;padding:18px 20px;border-radius:14px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12)}
+.citem .ic{width:40px;height:40px;border-radius:10px;background:var(--gold);color:#1a1405;display:grid;place-items:center;flex:none}
+.citem .ic svg{width:19px;height:19px}
+.citem small{display:block;font-size:.76rem;color:rgba(255,255,255,.65)}
+.citem b{font-size:1.4rem;font-weight:900;letter-spacing:-.01em}
+.citem b.sm{font-size:1rem;font-weight:700}
+.areas{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 26px}
+.areas span{padding:8px 16px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);font-size:.88rem}
+.info{display:grid;grid-template-columns:90px 1fr;gap:8px 12px;font-size:.92rem;margin-top:10px}
+.info dt{color:rgba(255,255,255,.55)}
+.subh{font-size:1rem;font-weight:800;margin:30px 0 4px}
+.form{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:26px;margin-top:22px}
+.form h3{font-size:1.08rem;margin-bottom:14px}
+.form .row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.form input,.form textarea{width:100%;font-family:inherit;font-size:.92rem;padding:12px 14px;border-radius:10px;border:1px solid rgba(255,255,255,.18);background:rgba(0,0,0,.2);color:#fff;margin-bottom:10px}
+.form textarea{min-height:90px;resize:vertical}
+.form .note{font-size:.8rem;color:rgba(255,255,255,.65);margin-top:10px;display:none}
+
+footer{background:#06140c;color:rgba(255,255,255,.6);padding:50px 0 34px;font-size:.84rem}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px}
+footer img{height:24px;margin-bottom:12px}
+
+/* floating */
+.fab{position:fixed;right:20px;bottom:20px;z-index:60;display:flex;flex-direction:column;gap:10px;align-items:flex-end}
+.fab .btn{box-shadow:0 8px 24px rgba(0,0,0,.2)}
+.toast{position:fixed;left:50%;bottom:28px;transform:translate(-50%,20px);opacity:0;background:#111;color:#fff;padding:12px 18px;border-radius:10px;font-size:.88rem;z-index:80;transition:.25s;pointer-events:none}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s, transform .7s}
+.reveal.in{opacity:1;transform:none}
+
+@media (max-width:900px){
+  .menu{display:none}
+  .grid2,.cards.c2{grid-template-columns:1fr;gap:30px}
+  .steps,.gallery{grid-template-columns:1fr 1fr}
+  section.sec{padding:80px 0}
+}
+@media (max-width:560px){
+  .steps,.gallery{grid-template-columns:1fr}
+  .kpis div{padding:16px 10px}
+  .kpis b{font-size:1.6rem}
+  .fab{right:12px;bottom:12px}
+  .fab .btn{padding:10px 14px;font-size:.8rem}
+  .fab .lbl{display:none}
+  .stats b{font-size:1.3rem}
+  .nav-cta .btn-ghost span{display:none}
+  .form .row{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a href="#top" class="brand"><img src="img/logo-white.png" alt="(주)금호테크닉스"></a>
+    <nav class="menu">
+      <a href="#about">사업 소개</a><a href="#trust">공신력</a><a href="#benefit">혜택</a><a href="#eligible">자격</a><a href="#process">절차</a><a href="#projects">실적</a>
+    </nav>
+    <div class="nav-cta">
+      <button class="btn btn-ghost" data-dl><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 20h14"/></svg><span>소개서</span></button>
+      <a class="btn btn-gold" href="#contact">문의하기</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="hero-bg" aria-hidden="true">
+    <svg viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#0c1a14"/><stop offset=".35" stop-color="#1d3324"/>
+          <stop offset=".55" stop-color="#6b5a22"/><stop offset=".62" stop-color="#c9922a"/>
+          <stop offset=".64" stop-color="#e9b543"/><stop offset=".66" stop-color="#5a4a1c"/>
+          <stop offset="1" stop-color="#07130c"/>
+        </linearGradient>
+        <radialGradient id="sun" cx=".5" cy=".64" r=".45">
+          <stop offset="0" stop-color="#ffd76a" stop-opacity=".9"/><stop offset=".25" stop-color="#e2a12c" stop-opacity=".45"/><stop offset="1" stop-color="#e2a12c" stop-opacity="0"/>
+        </radialGradient>
+        <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#1b2f3a"/><stop offset="1" stop-color="#0a1418"/>
+        </linearGradient>
+        <filter id="blur"><feGaussianBlur stdDeviation="18"/></filter>
+      </defs>
+      <rect width="1600" height="1000" fill="url(#sky)"/>
+      <g filter="url(#blur)" opacity=".55">
+        <ellipse cx="300" cy="220" rx="380" ry="60" fill="#3d4a33"/>
+        <ellipse cx="1250" cy="300" rx="420" ry="70" fill="#4a4a2a"/>
+        <ellipse cx="800" cy="420" rx="520" ry="50" fill="#7a6430"/>
+        <ellipse cx="1100" cy="150" rx="300" ry="40" fill="#2b3a2c"/>
+      </g>
+      <rect width="1600" height="1000" fill="url(#sun)"/>
+      <g id="rows">
+        <path d="M0 700 L1600 700 L1600 1000 L0 1000Z" fill="#08140d"/>
+        <g fill="url(#panel)" stroke="#d9a53a" stroke-opacity=".35" stroke-width="1">
+          <path d="M-200 705 L1800 705 L1800 716 L-200 716Z"/>
+          <path d="M-300 730 L1900 730 L1900 748 L-300 748Z"/>
+          <path d="M-400 770 L2000 770 L2000 798 L-400 798Z"/>
+          <path d="M-500 830 L2100 830 L2100 872 L-500 872Z"/>
+          <path d="M-600 915 L2200 915 L2200 975 L-600 975Z"/>
+        </g>
+        <g stroke="#e9b543" stroke-opacity=".18" stroke-width="1.2">
+          <path d="M800 690 L-400 1000M800 690 L0 1000M800 690 L400 1000M800 690 L800 1000M800 690 L1200 1000M800 690 L1600 1000M800 690 L2000 1000"/>
+        </g>
+        <path d="M640 700 L960 700 L1100 1000 L500 1000Z" fill="#f2c25a" opacity=".08"/>
+      </g>
+    </svg>
+  </div>
+  <div class="wrap">
+    <span class="pill"><i></i>2026 햇빛소득마을 조성사업 · 행정안전부 주관</span>
+    <h1>마을의 미래를<br><span class="g">햇빛으로</span> 밝히다</h1>
+    <p class="sub">재생에너지 종합서비스기업 (ReSCO)<b>(주)금호테크닉스</b></p>
+    <div class="badges"><span class="badge">ReSCO 선정기업</span><span class="badge">조달청 등록기업</span><span class="badge">한국에너지공단 참여기업</span></div>
+    <div class="stats">
+      <div><b>500개</b><span>연간 조성 마을</span><em>2030년 2,500개 목표</em></div>
+      <div><b>6,480억원</b><span>재생에너지 금융지원</span><em>전년 대비 50% 확대</em></div>
+      <div><b>85%</b><span>설치비 정부 지원</span><em>저리 융자 연계</em></div>
+    </div>
+    <div class="hero-cta">
+      <a class="btn btn-ghost" href="#eligible">햇빛소득마을 만들기</a>
+      <a class="btn btn-ghost" style="border-color:transparent" href="#about">사업 자세히 보기</a>
+      <a class="btn btn-gold" href="#contact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg>문의하기</a>
+    </div>
+  </div>
+  <div class="scroll">SCROLL<br>↓</div>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="track">
+  <span>행정안전부</span><span>한국에너지공단</span><span>조달청 등록기업</span><span>ReSCO 선정기업</span><span>한국전력공사</span><span>지자체 협력 100+</span>
+  <span>행정안전부</span><span>한국에너지공단</span><span>조달청 등록기업</span><span>ReSCO 선정기업</span><span>한국전력공사</span><span>지자체 협력 100+</span>
+</div></div>
+
+<!-- 01 COMPANY -->
+<section class="sec" id="about">
+  <div class="wrap grid2">
+    <div class="reveal">
+      <div class="eyebrow">01 · Company</div>
+      <h2>재생에너지로 마을에<br><em>지속가능한 소득</em>을 만듭니다</h2>
+      <p class="lead">햇빛소득마을은 행정안전부 주관 국책사업입니다. 마을이 태양광 발전으로 안정적인 소득을 만들 수 있도록 설계·시공·인허가·운영 전 과정을 지원하며, 지역 사정에 가장 밝은 대구·경북 대표 ReSCO로서 마을 사업의 전 주기를 책임집니다.</p>
+      <div class="kpis">
+        <div><b>100<small>MW</small></b><strong>유지관리 용량</strong><span>약 500개소 이상</span></div>
+        <div><b>37<small>종</small></b><strong>조달청 등록 장치</strong><span>태양광발전장치</span></div>
+        <div><b>20<small>년</small></b><strong>안정 운영 보장</strong><span>발전소 수명 기준</span></div>
+      </div>
+    </div>
+    <div class="reveal">
+      <div class="dowell">
+        <h4>우리가 하는 일</h4>
+        <ul>
+          <li><span class="chk"><svg viewBox="0 0 16 16"><path d="M4 8.5l2.5 2.5L12 5.5" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>설계부터 시공, 유지관리까지 전 과정 직접 수행</li>
+          <li><span class="chk"><svg viewBox="0 0 16 16"><path d="M4 8.5l2.5 2.5L12 5.5" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>지역 사정에 가장 밝은 대구/경북 No.1 ReSCO</li>
+          <li><span class="chk"><svg viewBox="0 0 16 16"><path d="M4 8.5l2.5 2.5L12 5.5" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>20년 이상 안정적인 운영 보장</li>
+        </ul>
+      </div>
+      <figure style="margin-top:16px;border-radius:14px;overflow:hidden"><img src="img/p4.jpg" alt="여주하랑 태양광발전소" style="aspect-ratio:16/8;object-fit:cover;width:100%"></figure>
+    </div>
+  </div>
+</section>
+
+<!-- 02 CREDENTIALS -->
+<section class="sec alt" id="trust">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyebrow">02 · Credentials</div>
+      <h2>정부가 인정한 <em>자격</em>으로 책임집니다</h2>
+      <p class="lead">행정안전부가 주관하는 2026 햇빛소득마을 조성사업의 재생에너지 종합서비스기업(ReSCO)으로 선정된 (주)금호테크닉스입니다.</p>
+      <div class="news"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M3 11v2a1 1 0 0 0 1 1h2l5 4V6L6 10H4a1 1 0 0 0-1 1zM15 8a5 5 0 0 1 0 8"/></svg></span><div><small>주요 소식</small><b>햇빛소득마을 2차 7개 마을 선정!</b></div></div>
+    </div>
+    <div class="cards c2 reveal">
+      <div class="card"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V10M19 21V10M9 21v-7M15 21v-7M2 10l10-6 10 6"/></svg></span><div><h3>정부 국책사업 수행기업</h3><p>행정안전부·한국에너지공단이 공식 인정한 햇빛소득마을 종합서비스기업(ReSCO)으로 선정되었습니다.</p></div></div>
+      <div class="card"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.5 2.5L16 9.5"/></svg></span><div><h3>조달청 등록기업</h3><p>태양광발전장치 37종을 조달청에 정식 등록한 공공 조달 자격 보유 기업입니다.</p></div></div>
+      <div class="card"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.6 2.6-2.4-.6-.6-2.4z"/></svg></span><div><h3>설계·시공·유지관리 전 과정 직접 수행</h3><p>컨설팅부터 인허가, 시공, O&amp;M까지 외주 없이 자체 인력으로 책임 수행합니다.</p></div></div>
+      <div class="card"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5L15.5 10"/></svg></span><div><h3>전기안전관리 자회사 보유</h3><p>(주)썬전기안전관리를 통해 약 100MW · 500개소 이상 발전소의 안정적 운영을 보장합니다.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 03 BENEFITS -->
+<section class="sec" id="benefit">
+  <div class="wrap grid2">
+    <div class="reveal">
+      <div class="eyebrow">03 · Business</div>
+      <h2>사업 개요 · <em>제공 혜택</em></h2>
+      <p class="lead">마을 공동체가 태양광 발전사업을 안정적으로 시작하고 운영할 수 있도록 기술·행정·교육·운영 전반을 지원하며, 참여 마을에는 아래와 같은 혜택이 주어집니다.</p>
+      <figure style="margin-top:28px;border-radius:14px;overflow:hidden"><img src="img/p3.jpg" alt="신촌1호~15호 태양광발전소" style="aspect-ratio:4/3;object-fit:cover;width:100%"></figure>
+    </div>
+    <div class="cards reveal">
+      <div class="card"><span class="ic solid"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12A9 9 0 1 1 12 3v9z"/><path d="M15 3.5A9 9 0 0 1 20.5 9H15z"/></svg></span><div><h3>REC 가중치 추가</h3><p>전력 판매 수익을 마을 복지와 주민 소득으로 환원. 주민참여사업 기준 충족 시 REC 가중치 최대 0.2 추가 부여.</p></div></div>
+      <div class="card"><span class="ic solid"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M15 9.5c-.5-1-1.6-1.5-3-1.5-1.7 0-3 .8-3 2s1.3 1.7 3 2 3 .8 3 2-1.3 2-3 2c-1.4 0-2.5-.5-3-1.5M12 6v12"/></svg></span><div><h3>설치비 최대 85% 지원</h3><p>햇빛소득마을 태양광은 별도의 금융지원사업 자격을 부여받습니다. 설치비 최대 85% 정부 지원(금리 약 2%, 5년 거치 10년 상환).</p></div></div>
+      <div class="card"><span class="ic solid"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="7" width="16" height="10" rx="2"/><path d="M21 10v4M11 9l-2 3h4l-2 3"/></svg></span><div><h3>ESS 설치비용 100% 지원</h3><p>전력 계통 부족 지역 ESS 설치비용 최대 100% 정부 지원(정부 50% + 지방정부 20% + VPP 사업자 30%).</p></div></div>
+      <div class="card"><span class="ic solid"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="2" y="14" width="5" height="6" rx="1.5"/><rect x="17" y="14" width="5" height="6" rx="1.5"/></svg></span><div><h3>전 과정 원스톱 지원</h3><p>태양광 발전사업 컨설팅부터 인허가, 유지관리 등 전 과정 지원. 햇빛소득마을 종합서비스기업이 끝까지 지원합니다.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 04 ELIGIBILITY -->
+<section class="sec alt" id="eligible">
+  <div class="wrap grid2">
+    <div class="reveal">
+      <div class="eyebrow">04 · Eligibility</div>
+      <h2>이런 마을이<br><em>참여할 수 있어요</em></h2>
+      <p class="lead">아래 4가지 요건을 모두 갖추면 신청할 수 있습니다. 하나라도 부족해도 상담을 통해 준비 방법을 함께 찾아드립니다.</p>
+      <a class="btn btn-green" href="#contact" style="margin-top:26px;padding:14px 24px">우리 마을 가능한지 상담받기</a>
+    </div>
+    <div class="cards reveal">
+      <div class="req"><span class="no">01</span><div><h3>마을 주민 70% 이상 찬성 동의</h3><p>마을 총회 승인과 자격을 갖춘 주민 70% 이상의 동의서가 필요합니다.</p></div></div>
+      <div class="req"><span class="no">02</span><div><h3>주민 주도형 협동조합 설립</h3><p>마을에서 1년 이상 거주한 18세 이상 주민 10명 이상이 모여 조합을 설립해야 합니다.</p></div></div>
+      <div class="req"><span class="no">03</span><div><h3>태양광 발전사업 가능 부지 확보</h3><p>총 300kW 이상 1,000kW 이하의 태양광 발전사업이 가능한 부지를 확보해야 합니다. 전력 계통 부족 지역은 ESS 연계 설치 비용 100% 정부 지원이 가능합니다.</p></div></div>
+      <div class="req"><span class="no">04</span><div><h3>태양광 설치비의 15% 이상 확보</h3><p>발전사업 허가 취득을 위한 태양광 설치비의 15%를 마련해야 합니다. 마을기금, 주민펀딩, 상호금융기관 대출 등 활용 가능.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 05 PROCESS -->
+<section class="sec" id="process">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyebrow">05 · Process</div>
+      <h2>신청은 <em>이렇게 진행됩니다</em></h2>
+      <p class="lead">주민 동의 확보부터 정부 공모 심사까지 6단계입니다. 민관 협동 현장지원단이 단계마다 함께 도와드립니다.</p>
+    </div>
+    <div class="steps reveal">
+      <div class="step"><span class="no">01</span><h3>주민 동의 확보</h3><p>주민 설명회 개최, 주민 70% 이상 동의서 확보</p></div>
+      <div class="step"><span class="no">02</span><h3>협동조합 설립</h3><p>법인 등기 완료, 민관 협동 현장지원단 밀착 지원</p></div>
+      <div class="step"><span class="no">03</span><h3>부지 확보</h3><p>마을 유휴부지, 공공부지 중심 설치 입지 확인. 신재생 계통 지도 기반 최적 입지(부지) 선정 지원</p></div>
+      <div class="step"><span class="no">04</span><h3>사업계획서 작성</h3><p>현장지원단을 적극 활용하여 사업계획서 작성</p></div>
+      <div class="step"><span class="no">05</span><h3>지방정부 제출</h3><p>기초 지방정부 접수 부서에 제출 후 정부 공모 제출</p></div>
+      <div class="step hl"><span class="no">06</span><h3>심사 및 선정</h3><p>정부 심사를 거쳐 사업 대상 마을 선정</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 06 PROJECTS -->
+<section class="sec alt" id="projects">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyebrow">06 · Projects</div>
+      <h2>입지 분석부터 <em>시공 실적</em>까지</h2>
+    </div>
+    <div class="site-box reveal" style="margin-top:20px">
+      <h3><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1f6b3f" stroke-width="2"><circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="2"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg>신재생 계통 지도 기반 입지 분석</h3>
+      <p style="color:var(--ink2)">부지 확보 단계에서 마을 유휴부지와 공공부지를 대상으로 계통 접속 여건과 일사량, 지형을 종합 분석해 최적의 태양광 설치 입지를 찾아드립니다.</p>
+      <ul><li>계통 접속 가능 여부 및 여유 용량 사전 확인</li><li>일사량 · 지형 · 음영 종합 분석</li><li>전력망 연계 최적화 지점 도출</li></ul>
+    </div>
+    <h3 class="reveal" style="margin-top:44px;font-size:1.3rem;font-weight:800">주요 시공 실적</h3>
+    <div class="gallery reveal">
+      <figure><img src="img/p1.jpg" alt="신촌18호 태양광발전소"><figcaption>신촌18호 태양광발전소</figcaption></figure>
+      <figure><img src="img/p2.jpg" alt="신촌17호 태양광발전소"><figcaption>신촌17호 태양광발전소</figcaption></figure>
+      <figure><img src="img/p3.jpg" alt="신촌1호~15호 태양광발전소"><figcaption>신촌1호~15호 태양광발전소</figcaption></figure>
+      <figure><img src="img/p4.jpg" alt="여주하랑 태양광발전소"><figcaption>여주하랑 태양광발전소</figcaption></figure>
+      <figure><img src="img/p5.jpg" alt="안다미로제일 태양광발전소"><figcaption>안다미로제일 태양광발전소</figcaption></figure>
+      <figure><img src="img/p6.jpg" alt="안다미로제이 태양광발전소"><figcaption>안다미로제이 태양광발전소</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- 07 CONTACT -->
+<section class="sec contact" id="contact">
+  <div class="wrap grid2" style="position:relative">
+    <div class="reveal">
+      <div class="eyebrow">07 · Contact</div>
+      <h2>우리 마을에 <em>햇빛소득</em>을<br>함께 시작하세요</h2>
+      <p class="lead">상담은 무료입니다. 담당 엔지니어가 마을 상황에 맞춰 친절하게 안내해 드립니다. 전화 한 통이면 충분합니다.</p>
+      <p class="subh">방문 상담 가능 지역</p>
+      <div class="areas"><span>경상북도</span><span>대구광역시</span><span>포항</span><span>구미</span><span>경주</span><span>안동</span><span>김천</span><span>달성군</span></div>
+      <p class="subh">회사 정보</p>
+      <dl class="info">
+        <dt>상호</dt><dd>(주)금호테크닉스</dd>
+        <dt>사업 분야</dt><dd>햇빛소득마을 · 태양광 · ESS</dd>
+        <dt>인증</dt><dd>조달청 등록 (태양광발전장치 37종)</dd>
+        <dt>협력</dt><dd>한국에너지공단 참여기업 / AS전담기업</dd>
+        <dt>본사</dt><dd>경북 구미시 산호대로 130-72</dd>
+        <dt>사무소</dt><dd>대구광역시 북구 한강로8길 20, 3층</dd>
+      </dl>
+    </div>
+    <div class="reveal">
+      <div class="clist">
+        <a class="citem" href="tel:0533232098"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></span><div><small>전화 상담</small><b>053-323-2098</b></div></a>
+        <div class="citem"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 9V3h12v6M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2M6 14h12v7H6z"/></svg></span><div><small>팩스</small><b>053-289-4097</b></div></div>
+        <a class="citem" href="mailto:kumho3@kht.kr"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span><div><small>이메일</small><b class="sm">kumho3@kht.kr</b></div></a>
+      </div>
+      <form class="form" id="qform">
+        <h3>간편 상담 신청</h3>
+        <div class="row"><input name="name" placeholder="성함 / 마을 이름" required><input name="tel" placeholder="연락처" required></div>
+        <input name="area" placeholder="대략적인 위치 (예: 창녕군 이방면)">
+        <textarea name="msg" placeholder="문의 내용 (부지 면적, 주민 동의 현황 등)"></textarea>
+        <button class="btn btn-gold" type="submit" style="width:100%;justify-content:center;padding:14px">상담 신청 내용 이메일로 보내기</button>
+        <p class="note" id="fnote"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div><img src="img/logo-white.png" alt="(주)금호테크닉스"><p>재생에너지 종합서비스기업(ReSCO) · 햇빛소득마을 선정기업</p><p>본사 경북 구미시 산호대로 130-72 · 사무소 대구광역시 북구 한강로8길 20, 3층</p></div>
+    <div style="text-align:right"><p>T. 053-323-2098 · F. 053-289-4097</p><p>E. kumho3@kht.kr</p><p style="margin-top:12px">© 2026 (주)금호테크닉스. All rights reserved.</p></div>
+  </div>
+</footer>
+
+<div class="fab">
+  <button class="btn btn-green" id="bigtext"><b style="font-size:1.05em">가</b><span class="lbl"> 큰 글씨 보기</span></button>
+  <button class="btn btn-gold" data-dl><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 20h14"/></svg><span class="lbl">사업안내서 PDF</span></button>
+</div>
+<div class="toast" id="toast"></div>
+
+<script>
+const nav=document.getElementById('nav');
+const onScroll=()=>nav.classList.toggle('solid',scrollY>40);
+addEventListener('scroll',onScroll,{passive:true});onScroll();
+
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+const toast=(t)=>{const el=document.getElementById('toast');el.textContent=t;el.classList.add('on');clearTimeout(el._t);el._t=setTimeout(()=>el.classList.remove('on'),2600)};
+
+// 큰 글씨
+let big=0;try{big=+localStorage.getItem('kht-big')||0}catch(e){}
+const applyBig=()=>{document.documentElement.style.setProperty('--fs',[1,1.15,1.3][big]);document.querySelector('#bigtext .lbl').textContent=[' 큰 글씨 보기',' 아주 크게',' 기본 크기'][big]};
+document.getElementById('bigtext').onclick=()=>{big=(big+1)%3;try{localStorage.setItem('kht-big',big)}catch(e){};applyBig()};
+applyBig();
+
+// 소개서 다운로드: Claude 아티팩트에서는 downloads 기능, 일반 웹호스팅에서는 직접 다운로드
+const FILE='kht-brochure.pdf', NAME='금호테크닉스_햇빛소득마을_사업안내서.pdf';
+let dl=null;
+if(window.claude&&window.claude.use){window.claude.use('downloads').then(d=>{dl=d}).catch(()=>{})}
+async function download(){
+  if(dl){
+    try{const r=await fetch(FILE);const b=await r.blob();await dl.save({filename:NAME,data:b});return}
+    catch(e){toast('다운로드가 취소되었습니다.');return}
+  }
+  if(window.claude){location.href='brochure.html';return}
+  const a=document.createElement('a');a.href=FILE;a.download=NAME;document.body.appendChild(a);a.click();a.remove();
+}
+document.querySelectorAll('[data-dl]').forEach(b=>b.addEventListener('click',download));
+
+// 상담 신청: 메일 앱으로 내용 전달
+document.getElementById('qform').addEventListener('submit',e=>{
+  e.preventDefault();const f=new FormData(e.target);
+  const body=`성함/마을: ${f.get('name')}\n연락처: ${f.get('tel')}\n위치: ${f.get('area')}\n\n${f.get('msg')}`;
+  const n=document.getElementById('fnote');
+  n.style.display='block';
+  n.textContent='메일 앱이 열리지 않으면 053-323-2098로 전화 주시거나 kumho3@kht.kr로 위 내용을 보내주세요.';
+  location.href='mailto:kumho3@kht.kr?subject='+encodeURIComponent('[햇빛소득마을 상담 신청] '+f.get('name'))+'&body='+encodeURIComponent(body);
+});
+</script>
+</body>
+</html>
